@@ -6,25 +6,26 @@ export default function Home() {
     <main className="flex min-h-screen items-center justify-around bg-slate-50">
 
       <section>
-        <h1 className="text-4xl font-bold mb-8 text-gray-800 text-center">Non Generic Table</h1>
-        <Table columnDefs={[
-          {
-            title: "Name",
-            render: (rowData) => `${rowData.firstName} ${rowData.lastName}`
-          },
-          {
-            title: "Age",
-            field: "age"
-          },
-          {
-            title: "Email",
-            field: "email"
-          },
-          {
-            title: "Phone",
-            field: "phone"
-          }
-        ]}
+        <h1 className="text-4xl font-bold mb-8 text-gray-800 text-center">Generic Table</h1>
+        <Table
+          columnDefs={[
+            {
+              title: "Name",
+              render: (rowData) => `${rowData.firstName} ${rowData.lastName}`,
+            },
+            {
+              title: "Absence",
+              field: "absence",
+            },
+            {
+              title: "Email",
+              field: "email",
+            },
+            {
+              title: "Address", // Properti yang benar adalah `address`
+              field: "address",
+            },
+          ]}
           data={employees}
         />
       </section>

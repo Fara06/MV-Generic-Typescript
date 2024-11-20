@@ -1,36 +1,47 @@
 interface Employee {
     firstName: string;
     lastName: string;
-    phone: string;
     address: string;
-    age: number;
+    absence: number;
     email: string;
     verified?: boolean;
 }
 export const employees: Employee[] = [
     {
-        firstName: "John",
-        lastName: "Doe",
-        age: 30,
-        phone: "1234567890",
-        address: "123 Main St",
-        email: "john.doe@github.com",
+        firstName: "Desthrie",
+        lastName: "Tsaqibah",
+        absence : 9,
+        address: "Candi",
+        email: "gmail.com",
         verified: true,
     },
     {
-        firstName: "Jane",
-        lastName: "Smith",
-        phone: "9876543210",
-        age: 30,
-        address: "456 Elm St",
-        email: "jane.smith@github.com",
+        firstName: "Nailah",
+        lastName: "Anastasya",
+        absence: 26,
+        address: "Tulangan",
+        email: "gmail.com",
     },
     {
-        firstName: "Randolf",
-        lastName: "Carter",
-        age: 30,
-        phone: "23876543221",
-        address: "256 Sec St",
-        email: "randolf.carter@github.com",
+        firstName: "Debby",
+        lastName: "Maria",
+        absence: 8,
+        address: "sidokare",
+        email: "gmail.com",
     },
+    {
+        firstName: "Aufa",
+        lastName: "Ramadhani",
+        absence: 5,
+        address: "sidokare",
+        email: "gmail.com",
+    },
+    {
+        firstName: "Sabrina",
+        lastName: "Mutiara",
+        absence: 0,
+        address: "sidokare",
+        email: "gmail.com",
+    },
+    
 ];
